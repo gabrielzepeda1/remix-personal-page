@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Button, Tooltip } from "flowbite-react";
-import Header from "~/components/Header";
+import Hero from "~/components/Hero";
 
 export const meta: MetaFunction = () => {
   return [
@@ -11,6 +10,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className="flex flex-col items-center px-4">Initial Commit</main>
+    <main>
+      <Hero />
+    </main>
   );
 }
